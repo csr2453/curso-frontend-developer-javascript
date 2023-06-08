@@ -16,11 +16,13 @@ productDetailClose.addEventListener('click', closeProductDetailAside);
 
 function toggleDesktopMenu() {
     !shoppingCartContainer.classList.contains('inactive') ? shoppingCartContainer.classList.add('inactive'):'';
+    !prodructDetailContainer.classList.contains('inactive') ? prodructDetailContainer.classList.add('inactive'):'';
     desktopMenu.classList.toggle('inactive');
 }
 
 function toggleMenuHamIcon() {
     !shoppingCartContainer.classList.contains('inactive') ? shoppingCartContainer.classList.add('inactive') : '';
+    !prodructDetailContainer.classList.contains('inactive') ? prodructDetailContainer.classList.add('inactive') : '';
     mobileMenu.classList.toggle('inactive');
 }
 
@@ -33,6 +35,8 @@ function toggleShoppingCart() {
 
 function openProductDetailAside() {
     !shoppingCartContainer.classList.contains('inactive') ? shoppingCartContainer.classList.add('inactive'):'';
+    !desktopMenu.classList.contains('inactive') ? desktopMenu.classList.add('inactive'):'';
+    !mobileMenu.classList.contains('inactive') ? mobileMenu.classList.add('inactive') : '';
     prodructDetailContainer.classList.remove('inactive');
 }
 
@@ -49,6 +53,12 @@ productList.push(
 );
  productList.push( 
     {name:'Motocicle', price:222, image:'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'}
+);
+productList.push( 
+    {name:'Cellphone', price:234, image:'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'}
+);
+productList.push( 
+    {name:'Smart watch', price:555, image:'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'}
 );
 
 renderProudcts(productList);
