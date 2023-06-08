@@ -98,5 +98,3 @@ function renderProudcts(arr) {
         cardsContainer.appendChild(productCard);
     }
 }
-
-
